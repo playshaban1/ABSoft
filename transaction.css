@@ -254,7 +254,10 @@ header .title {
         width: 80%;
         margin: 0 auto;
     }
-
+    .details table .amounts {
+        width: 60px;
+        height: 60px;
+    }
     .actions button {
         width: 100px;
         padding: 5px;
@@ -269,8 +272,8 @@ header .title {
     }
 
     .dataTable {
-        overflow-x: auto;
-
+        overflow:hidden;
+        overflow-y: auto;
     }
 
     .addPro {
