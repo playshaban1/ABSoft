@@ -122,14 +122,21 @@ header .title {
 .dataTable {
     overflow-y: scroll;
     overflow-x: auto;
-    max-height: 300px;
+    
     width: 94%;
     margin: 0 auto;
     border: 2px solid gray;
     padding: 0;
     max-width: fit-content;
 }
-
+.newAdding
+{
+    max-height: 300px;
+}
+.billDetails
+{
+    max-height:fit-content;
+}
 .dataTable::-webkit-scrollbar {
     display: none;
 }

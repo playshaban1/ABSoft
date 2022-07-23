@@ -25,7 +25,7 @@
     <section class="data">
       <div class="details">
         <table>
-         
+
           <tr>
             <td align="center">
               <div class="amounts" style="color:blue">
@@ -53,28 +53,27 @@
         </table>
         <div class="actions">
           <button><i class="fas fa-arrow-left"></i> Go Back</button>
-          <button onclick="$('.action').hide();$('.AddRec').show();"><i class="fas fa-file-medical"></i> Add New</button>
+          <button onclick="$('.action').hide();$('.AddRec').show();"><i class="fas fa-file-medical"></i> Add
+            New</button>
         </div>
 
-  
+
         <form class="action AddRec">
           <fieldset>
             <table>
-              <legend>Edit Details</legend>
+              <legend>Add New</legend>
               <tr align="center">
                 <td colspan="2">
-                  <h1>Editing Distributer's Detials.</h1>
+                  <h1>Add New Destributer</h1>
                 </td>
-              </tr>
-              <tr align="right">
-                <td colspan="2"><button onclick="$('.action').hide();$('.DeleteData').show();">Delete Data</button></td>
               </tr>
 
               <tr>
                 <td>Name
-                  <aside>(Name can't be change)</aside>
                 </td>
-                <td>xxx</td>
+                <td>
+                  <input type="text">
+                </td>
               </tr>
               <tr>
                 <td>Mobile</td>
@@ -99,37 +98,10 @@
             </table>
           </fieldset>
         </form>
-        <form class="action DeleteData">
-          <fieldset>
-            <table>
-              <legend>Delete Data</legend>
-              <tr align="center">
-                <td colspan="2">
-                  <h1>!!Delete Whole Data!!</h1>
-                </td>
-              </tr>
 
-              <tr>
-                <td colspan="2">Enter Password to delete</td>
-              </tr>
-              <tr>
-              <tr>
-                <td colspan="2"><input type="text" name="" id="" required /></td>
-              </tr>
-              <tr style="text-align: center">
-                <td>
-                  <button onclick="$('.action').hide();" type="reset">
-                    Cancel
-                  </button>
-                </td>
-                <td><button type="submit">Save</button></td>
-              </tr>
-            </table>
-          </fieldset>
-        </form>
       </div>
-      <form method="post" class="searchbar" >
-        Search Bill No.<input type="search" name="search" id="searchinput" placeholder="Enter Name Or Model Number" />
+      <form method="post" class="searchbar">
+        Search Destributer <input type="search" name="search" id="searchinput" placeholder="Enter Name Or GST Number" />
         <ul id="searchlist" style="display:none ;">
           <li
             onclick="$('#productnamein').val('PVC PIPE 9597MM');$('#productname').html('PVC PIPE 9597MM'); $('#model').html(201); $('#modelin').val(201); $('#searchinput').val(''); ">
@@ -184,105 +156,58 @@
               <strong> Sl.No</strong>
             </th>
             <th>
-              <strong> Date </strong>
+              <strong> Name </strong>
             </th>
             <th>
-              <strong> Type </strong>
+              <strong> Dues </strong>
             </th>
-            <th>
-              <strong>Bill No.</strong>
-            </th>
-            <th>
-              <strong>Total</strong>
-            </th>
-            <th>
-              <strong>Paid</strong>
-            </th>
-            <th>
-              <strong>Dues</strong>
-            </th>
+
           </thead>
           <tbody>
-            <tr onclick="location.href='billdetails.html'">
+            <tr onclick="location.href='transactions.html'">
               <td>1</td>
-              <td>22/07/22</td>
-              <td>Stock Entry</td>
-              <td>52345223455345</td>
-              <td>500000</td>
-              <td>50000</td>
-              <td>-</td>
+              <td>Shaban Khan PVT. LTD</td>
+              <td>00</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>22/07/22</td>
-              <td>Stock Entry</td>
-              <td>52345223455345</td>
-              <td>500000</td>
-              <td>50000</td>
-              <td>-</td>
+              <td>Test Destributers</td>
+              <td>00</td>
             </tr>
             <tr>
               <td>3</td>
-              <td>22/07/22</td>
-              <td>Stock Entry</td>
-              <td>52345223455345</td>
-              <td>500000</td>
-              <td>50000</td>
-              <td>-</td>
+              <td>Test Destributers</td>
+              <td>00</td>
             </tr>
             <tr>
               <td>4</td>
-              <td>22/07/22</td>
-              <td>Stock Entry</td>
-              <td>52345223455345</td>
-              <td>500000</td>
-              <td>50000</td>
-              <td>-</td>
+              <td>Test Destributers</td>
+              <td>00</td>
             </tr>
             <tr>
               <td>5</td>
-              <td>22/07/22</td>
-              <td>Stock Entry</td>
-              <td>52345223455345</td>
-              <td>500000</td>
-              <td>50000</td>
-              <td>-</td>
+              <td>Test Destributers</td>
+              <td>00</td>
             </tr>
             <tr>
               <td>6</td>
-              <td>22/07/22</td>
-              <td>Stock Entry</td>
-              <td>52345223455345</td>
-              <td>500000</td>
-              <td>50000</td>
-              <td>-</td>
+              <td>Test Destributers</td>
+              <td>00</td>
             </tr>
             <tr>
               <td>7</td>
-              <td>22/07/22</td>
-              <td>Stock Entry</td>
-              <td>52345223455345</td>
-              <td>500000</td>
-              <td>50000</td>
-              <td>-</td>
+              <td>Test Destributers</td>
+              <td>00</td>
             </tr>
             <tr>
               <td>8</td>
-              <td>22/07/22</td>
-              <td>Stock Entry</td>
-              <td>52345223455345</td>
-              <td>500000</td>
-              <td>50000</td>
-              <td>-</td>
+              <td>Test Destributers</td>
+              <td>00</td>
             </tr>
             <tr>
               <td>9</td>
-              <td>22/07/22</td>
-              <td>Stock Entry</td>
-              <td>52345223455345</td>
-              <td>500000</td>
-              <td>50000</td>
-              <td>-</td>
+              <td>Test Destributers</td>
+              <td>00</td>
             </tr>
           </tbody>
         </table>
@@ -290,5 +215,5 @@
     </section>
   </div>
 
-  <script src="records.js"></script>
+  <script src="newRecords.js"></script>
 </body>
