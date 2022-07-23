@@ -204,7 +204,7 @@ header .title {
     display: none;
     background-color: wheat;
     position: absolute;
-    transform: translate(25%, 10%);
+    transform: translate(35%, 10%);
     padding: 10px;
     max-height: 150px;
     overflow: auto;
