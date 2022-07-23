@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Records || Alpha Business</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="transaction.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="Logo.PNG" alt="Logo HERE" width="80" height="80">
+            <div class="title">
+                <h1>Alpha Business Software</h1>
+                <p>For Akash Hardwares</p>
+            </div>
+            <div class="pagetitle">
+                <p>All TRANSACTIONS</p>
+            </div>
+        </header>
+        <section class="data">
+
+            <div class="details">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td colspan="2">: Shaban Destributers</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td colspan="2">: shabankhan002@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone </td>
+                        <td colspan="2">: +917070921343</td>
+                    </tr>
+                    <tr>
+                        <td>GST Number</td>
+                        <td colspan="2">: GV322P523452</td>
+                    </tr>
+                    <tr>
+                        <td>Date </td>
+                        <td colspan="2">: 25/12/2022</td>
+                    </tr>
+                    <tr >
+                        <td align="center">
+                            <div class="amounts">
+                            <p>₹</p>
+                            <p>10000</p>
+                            <p>Total</p>
+                            </div>
+                        </td>
+                        <td align="center"><div class="amounts">
+                            <p>₹</p>
+                            <p>5000</p>
+                            <p>paid</p>
+                        </div></td>
+                        <td align="center"><div class="amounts">
+                            <p>₹</p>
+                            <p>5000</p>
+                            <p>Dues</p>
+                        </div></td>
+                    </tr>
+                </table>
+                <div class="actions">
+                    <button>Go Back</button></td>
+                    <button>Pay Dues</button>
+                    <button>Add New</button>
+                </div>
+                <form class="action cancelR">
+                    <fieldset>
+                        <table>
+                            <legend>Cancel Records</legend>
+                            <tr>
+                                <td colspan="2">
+                                    <h1>Are You sure you want to drop this record?</h1>
+                                </td>
+                            </tr>
+
+                            <tr style="text-align:center;">
+                                <td><button onclick="$('.action').hide();" type="reset">Cancel</button></td>
+                                <td><button type="submit">Save</button></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+                <form class="action SaveRec">
+                    <fieldset>
+                        <table>
+                            <legend>Save Record</legend>
+                            <tr>
+                                <td colspan="2">
+                                    <h1>Do you want to save this record?</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Please Enter bill number</td>
+                                <td><input type="text" name="billNo" id="" required></td>
+                            </tr>
+                            <tr>
+                                <td>Total Amount </td>
+                                <td>xxx</td>
+                            </tr>
+                            <tr>
+                                <td>Paid Amount </td>
+                                <td><input type="number" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Due Amount </td>
+                                <td><input type="number" name="" id=""></td>
+                            </tr>
+                            <tr>
+                                <td>Enter date :</td>
+                                <td><input type="date" name="" id="" required></td>
+                            </tr>
+                            <tr style="text-align:center;">
+                                <td><button onclick="$('.action').hide();" type="reset">Cancel</button></td>
+                                <td><button type="submit">Save</button></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+
+            </div>
+            <form method="post" class="searchbar">
+                Search Bill No.<input type="search" name="search" id="searchinput"
+                    placeholder="Enter Name Or Model Number">
+                <ul id="searchlist">
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 9597MM');$('#productname').html('PVC PIPE 9597MM'); $('#model').html(201); $('#modelin').val(201); $('#searchinput').val(''); ">
+                        PVC PIPE 9597MM || 201 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 6444MM');$('#productname').html('PVC PIPE 6444MM'); $('#model').html(202); $('#modelin').val(202); $('#searchinput').val(''); ">
+                        PVC PIPE 6444MM || 202 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 7078MM');$('#productname').html('PVC PIPE 7078MM'); $('#model').html(203); $('#modelin').val(203); $('#searchinput').val(''); ">
+                        PVC PIPE 7078MM || 203 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 6056MM');$('#productname').html('PVC PIPE 6056MM'); $('#model').html(204); $('#modelin').val(204); $('#searchinput').val(''); ">
+                        PVC PIPE 6056MM || 204 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 3393MM');$('#productname').html('PVC PIPE 3393MM'); $('#model').html(205); $('#modelin').val(205); $('#searchinput').val(''); ">
+                        PVC PIPE 3393MM || 205 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 5275MM');$('#productname').html('PVC PIPE 5275MM'); $('#model').html(206); $('#modelin').val(206); $('#searchinput').val(''); ">
+                        PVC PIPE 5275MM || 206 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 7683MM');$('#productname').html('PVC PIPE 7683MM'); $('#model').html(207); $('#modelin').val(207); $('#searchinput').val(''); ">
+                        PVC PIPE 7683MM || 207 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 8681MM');$('#productname').html('PVC PIPE 8681MM'); $('#model').html(208); $('#modelin').val(208); $('#searchinput').val(''); ">
+                        PVC PIPE 8681MM || 208 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 4699MM');$('#productname').html('PVC PIPE 4699MM'); $('#model').html(209); $('#modelin').val(209); $('#searchinput').val(''); ">
+                        PVC PIPE 4699MM || 209 </li>
+
+                </ul>
+            </form>
+            <div class="dataTable">
+
+
+                <table>
+                    <thead>
+
+                        <th>
+                            <strong> Sl.No</strong>
+                        </th>
+                        <th>
+                            <strong> Date </strong>
+                        </th>
+                        <th>
+                            <strong> Type </strong>
+                        </th>
+                        <th>
+                            <strong>Bill No.</strong>
+                        </th>
+                        <th>
+                            <strong>Total</strong>
+                        </th>
+                        <th>
+                            <strong>Paid</strong>
+                        </th>
+                        <th>
+                            <strong>Dues</strong>
+                        </th>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>22/07/22</td>
+                            <td>Stock Entry</td>
+                            <td>52345223455345</td>
+                            <td>500000</td>
+                            <td>50000</td>
+                            <td>-</td>         
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>22/07/22</td>
+                            <td>Stock Entry</td>
+                            <td>52345223455345</td>
+                            <td>500000</td>
+                            <td>50000</td>
+                            <td>-</td>     
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>22/07/22</td>
+                            <td>Stock Entry</td>
+                            <td>52345223455345</td>
+                            <td>500000</td>
+                            <td>50000</td>
+                            <td>-</td>     
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>22/07/22</td>
+                            <td>Stock Entry</td>
+                            <td>52345223455345</td>
+                            <td>500000</td>
+                            <td>50000</td>
+                            <td>-</td>     
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>22/07/22</td>
+                            <td>Stock Entry</td>
+                            <td>52345223455345</td>
+                            <td>500000</td>
+                            <td>50000</td>
+                            <td>-</td>     
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>22/07/22</td>
+                            <td>Stock Entry</td>
+                            <td>52345223455345</td>
+                            <td>500000</td>
+                            <td>50000</td>
+                            <td>-</td>     
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>22/07/22</td>
+                            <td>Stock Entry</td>
+                            <td>52345223455345</td>
+                            <td>500000</td>
+                            <td>50000</td>
+                            <td>-</td>     
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>22/07/22</td>
+                            <td>Stock Entry</td>
+                            <td>52345223455345</td>
+                            <td>500000</td>
+                            <td>50000</td>
+                            <td>-</td>     
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>22/07/22</td>
+                            <td>Stock Entry</td>
+                            <td>52345223455345</td>
+                            <td>500000</td>
+                            <td>50000</td>
+                            <td>-</td>     
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+           
+        </section>
+    </div>
+
+    <script src="records.js"></script>
+</body>
