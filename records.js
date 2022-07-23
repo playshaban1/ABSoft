@@ -10,6 +10,10 @@ const sgst = document.querySelector("#sgst");
 const totaltax = document.querySelector("#totaltax");
 const totalamt = document.querySelector("#totalamt");
 
+$('.action').on("submit",function(e)
+{
+    e.preventDefault();
+});
 
 
 $(function () {

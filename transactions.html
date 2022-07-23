@@ -5,15 +5,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="transaction.css" />
-  <script
-    src="https://code.jquery.com/jquery-3.6.0.slim.js"
-    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
-    crossorigin="anonymous"
-  ></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-  />
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
 
 <body>
@@ -78,54 +72,31 @@
         </table>
         <div class="actions">
           <button>Go Back</button>
-          <button>Pay Dues</button>
-          <button>Delete Data</button>
+          <button onclick="$('.action').hide();$('.PayDues').show();">Pay Dues</button>
+          <button onclick="$('.action').hide();$('.EditData').show();">Edit Details</button>
           <button onclick="location.href='records.html'">Add New</button>
         </div>
-        <form class="action cancelR">
+
+        <form class="action PayDues">
           <fieldset>
             <table>
-              <legend>Cancel Records</legend>
-              <tr>
+              <legend>Pay Old Dues</legend>
+              <tr align="center">
                 <td colspan="2">
-                  <h1>Are You sure you want to drop this record?</h1>
+                  <h1>You are now paying old dues</h1>
                 </td>
               </tr>
 
-              <tr style="text-align: center">
-                <td>
-                  <button onclick="$('.action').hide();" type="reset">
-                    Cancel
-                  </button>
-                </td>
-                <td><button type="submit">Save</button></td>
-              </tr>
-            </table>
-          </fieldset>
-        </form>
-        <form class="action SaveRec">
-          <fieldset>
-            <table>
-              <legend>Save Record</legend>
               <tr>
-                <td colspan="2">
-                  <h1>Do you want to save this record?</h1>
-                </td>
-              </tr>
-              <tr>
-                <td>Please Enter bill number</td>
-                <td><input type="text" name="billNo" id="" required /></td>
-              </tr>
-              <tr>
-                <td>Total Amount</td>
+                <td>Total Due Amount</td>
                 <td>xxx</td>
               </tr>
               <tr>
-                <td>Paid Amount</td>
+                <td>Paying Amount</td>
                 <td><input type="number" name="" id="" /></td>
               </tr>
               <tr>
-                <td>Due Amount</td>
+                <td>Rest Due Amount</td>
                 <td><input type="number" name="" id="" /></td>
               </tr>
               <tr>
@@ -143,66 +114,122 @@
             </table>
           </fieldset>
         </form>
+        <form class="action EditData">
+          <fieldset>
+            <table>
+              <legend>Edit Details</legend>
+              <tr align="center">
+                <td colspan="2">
+                  <h1>Editing Distributer's Detials.</h1>
+                </td>
+              </tr>
+              <tr align="right">
+                <td colspan="2"><button onclick="$('.action').hide();$('.DeleteData').show();">Delete Data</button></td>
+              </tr>
+
+              <tr>
+                <td>Name
+                  <aside>(Name can't be change)</aside>
+                </td>
+                <td>xxx</td>
+              </tr>
+              <tr>
+                <td>Mobile</td>
+                <td><input type="text" name="" id="" /></td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td><input type="text" name="" id="" /></td>
+              </tr>
+              <tr>
+                <td>GST Number</td>
+                <td><input type="text" name="" id="" /></td>
+              </tr>
+              <tr style="text-align: center">
+                <td>
+                  <button onclick="$('.action').hide();" type="reset">
+                    Cancel
+                  </button>
+                </td>
+                <td><button type="submit">Save</button></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+        <form class="action DeleteData">
+          <fieldset>
+            <table>
+              <legend>Delete Data</legend>
+              <tr align="center">
+                <td colspan="2">
+                  <h1>!!Delete Whole Data!!</h1>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">Enter Password to delete</td>
+              </tr>
+              <tr>
+              <tr>
+                <td colspan="2"><input type="text" name="" id="" required /></td>
+              </tr>
+              <tr style="text-align: center">
+                <td>
+                  <button onclick="$('.action').hide();" type="reset">
+                    Cancel
+                  </button>
+                </td>
+                <td><button type="submit">Save</button></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
       </div>
       <form method="post" class="searchbar">
-        Search Bill No.<input
-          type="search"
-          name="search"
-          id="searchinput"
-          placeholder="Enter Name Or Model Number"
-        />
+        Search Bill No.<input type="search" name="search" id="searchinput" placeholder="Enter Name Or Model Number" />
         <ul id="searchlist">
           <li
-            onclick="$('#productnamein').val('PVC PIPE 9597MM');$('#productname').html('PVC PIPE 9597MM'); $('#model').html(201); $('#modelin').val(201); $('#searchinput').val(''); "
-          >
+            onclick="$('#productnamein').val('PVC PIPE 9597MM');$('#productname').html('PVC PIPE 9597MM'); $('#model').html(201); $('#modelin').val(201); $('#searchinput').val(''); ">
             PVC PIPE 9597MM || 201
           </li>
 
           <li
-            onclick="$('#productnamein').val('PVC PIPE 6444MM');$('#productname').html('PVC PIPE 6444MM'); $('#model').html(202); $('#modelin').val(202); $('#searchinput').val(''); "
-          >
+            onclick="$('#productnamein').val('PVC PIPE 6444MM');$('#productname').html('PVC PIPE 6444MM'); $('#model').html(202); $('#modelin').val(202); $('#searchinput').val(''); ">
             PVC PIPE 6444MM || 202
           </li>
 
           <li
-            onclick="$('#productnamein').val('PVC PIPE 7078MM');$('#productname').html('PVC PIPE 7078MM'); $('#model').html(203); $('#modelin').val(203); $('#searchinput').val(''); "
-          >
+            onclick="$('#productnamein').val('PVC PIPE 7078MM');$('#productname').html('PVC PIPE 7078MM'); $('#model').html(203); $('#modelin').val(203); $('#searchinput').val(''); ">
             PVC PIPE 7078MM || 203
           </li>
 
           <li
-            onclick="$('#productnamein').val('PVC PIPE 6056MM');$('#productname').html('PVC PIPE 6056MM'); $('#model').html(204); $('#modelin').val(204); $('#searchinput').val(''); "
-          >
+            onclick="$('#productnamein').val('PVC PIPE 6056MM');$('#productname').html('PVC PIPE 6056MM'); $('#model').html(204); $('#modelin').val(204); $('#searchinput').val(''); ">
             PVC PIPE 6056MM || 204
           </li>
 
           <li
-            onclick="$('#productnamein').val('PVC PIPE 3393MM');$('#productname').html('PVC PIPE 3393MM'); $('#model').html(205); $('#modelin').val(205); $('#searchinput').val(''); "
-          >
+            onclick="$('#productnamein').val('PVC PIPE 3393MM');$('#productname').html('PVC PIPE 3393MM'); $('#model').html(205); $('#modelin').val(205); $('#searchinput').val(''); ">
             PVC PIPE 3393MM || 205
           </li>
 
           <li
-            onclick="$('#productnamein').val('PVC PIPE 5275MM');$('#productname').html('PVC PIPE 5275MM'); $('#model').html(206); $('#modelin').val(206); $('#searchinput').val(''); "
-          >
+            onclick="$('#productnamein').val('PVC PIPE 5275MM');$('#productname').html('PVC PIPE 5275MM'); $('#model').html(206); $('#modelin').val(206); $('#searchinput').val(''); ">
             PVC PIPE 5275MM || 206
           </li>
 
           <li
-            onclick="$('#productnamein').val('PVC PIPE 7683MM');$('#productname').html('PVC PIPE 7683MM'); $('#model').html(207); $('#modelin').val(207); $('#searchinput').val(''); "
-          >
+            onclick="$('#productnamein').val('PVC PIPE 7683MM');$('#productname').html('PVC PIPE 7683MM'); $('#model').html(207); $('#modelin').val(207); $('#searchinput').val(''); ">
             PVC PIPE 7683MM || 207
           </li>
 
           <li
-            onclick="$('#productnamein').val('PVC PIPE 8681MM');$('#productname').html('PVC PIPE 8681MM'); $('#model').html(208); $('#modelin').val(208); $('#searchinput').val(''); "
-          >
+            onclick="$('#productnamein').val('PVC PIPE 8681MM');$('#productname').html('PVC PIPE 8681MM'); $('#model').html(208); $('#modelin').val(208); $('#searchinput').val(''); ">
             PVC PIPE 8681MM || 208
           </li>
 
           <li
-            onclick="$('#productnamein').val('PVC PIPE 4699MM');$('#productname').html('PVC PIPE 4699MM'); $('#model').html(209); $('#modelin').val(209); $('#searchinput').val(''); "
-          >
+            onclick="$('#productnamein').val('PVC PIPE 4699MM');$('#productname').html('PVC PIPE 4699MM'); $('#model').html(209); $('#modelin').val(209); $('#searchinput').val(''); ">
             PVC PIPE 4699MM || 209
           </li>
         </ul>
