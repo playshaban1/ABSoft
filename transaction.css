@@ -70,18 +70,20 @@ header .title {
     padding: 20px;
     width: 100%;
     margin: 0 auto;
-   
+    
 }
 
 .details table .amounts
 {
     background-color: yellow;
-    
+    width:120px;
+    height: 120px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     overflow: hidden;
-    
+    margin: 0 auto;
 }
 .details table .amounts p
 {
@@ -95,7 +97,7 @@ header .title {
     width: 100%;
     margin: 0 auto;
     padding: 10px 0px;
-
+    
 }
 
 .actions button {
@@ -146,8 +148,7 @@ header .title {
     margin: 0 auto;
     border: 2px solid gray;
     padding: 0;
-   
-    background-color: yellow;
+
 }
 
 .dataTable::-webkit-scrollbar {
