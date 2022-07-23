@@ -63,20 +63,19 @@ header .title {
     width: 95%;
     margin: auto;
     padding: 0;
-    
+
 }
 
 .details table {
     padding: 20px;
     width: 100%;
     margin: 0 auto;
-    
+
 }
 
-.details table .amounts
-{
+.details table .amounts {
     background-color: yellow;
-    width:120px;
+    width: 120px;
     height: 120px;
     border-radius: 10px;
     display: flex;
@@ -85,8 +84,8 @@ header .title {
     overflow: hidden;
     margin: 0 auto;
 }
-.details table .amounts p
-{
+
+.details table .amounts p {
     height: 0px;
 }
 
@@ -97,7 +96,7 @@ header .title {
     width: 100%;
     margin: 0 auto;
     padding: 10px 0px;
-    
+
 }
 
 .actions button {
@@ -233,14 +232,14 @@ header .title {
     }
 
     .container {
-        width: 90%;
+        width: 99%;
         box-shadow: none;
-
+        padding: 0;
     }
 
     header {
         width: 90%;
-
+        padding: 0;
         margin: 0 auto;
     }
 
@@ -250,26 +249,35 @@ header .title {
         padding: 0 0;
         margin: auto;
     }
-    .pagetitle
-    {
-        width: 100%;
+
+    .pagetitle {
+        width: 80%;
+        margin: 0 auto;
     }
-    .action
-    {
+
+    .actions button {
+        width: 100px;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .action {
         width: 75%;
-        transform: translateX(0%);
-        top: 100px;
+        transform: translateX(5%);
+        top: 200px;
     }
 
     .dataTable {
         overflow-x: auto;
-       
+
     }
+
     .addPro {
         width: 98%;
         margin: 0 auto;
         background-color: var(--theme1);
-    
+
         color: white;
         padding: 0;
     }
