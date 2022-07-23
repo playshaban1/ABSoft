@@ -47,20 +47,20 @@
           </tr>
           <tr>
             <td align="center">
-              <div class="amounts">
+              <div class="amounts" style="color:blue">
                 ₹ <br />
                 100000 <br />
                 Total
               </div>
             </td>
             <td align="center">
-              <div class="amounts">
+              <div class="amounts" style="color:green">
                 ₹ <br />
                 25000 <br />
                 paid
               </div>
             </td>
-            <td align="center">
+            <td align="center" style="color:red">
               <div class="amounts">
                 ₹ <br />
                 75000 <br />
@@ -74,7 +74,7 @@
           <button><i class="fas fa-arrow-left"></i> Go Back</button>
           <button onclick="$('.action').hide();$('.PayDues').show();"><i class="fas fa-rupee-sign"></i> Pay Dues</button>
           <button onclick="$('.action').hide();$('.EditData').show();"><i class="fas fa-edit"></i> Edit Details</button>
-          <button onclick="location.href='records.html'"><i class="fas fa-file-medical"></i> Add New</button>
+          <button onclick="location.href='newRecords.html'"><i class="fas fa-file-medical"></i> Add New</button>
         </div>
 
         <form class="action PayDues">
@@ -185,9 +185,9 @@
           </fieldset>
         </form>
       </div>
-      <form method="post" class="searchbar">
+      <form method="post" class="searchbar" >
         Search Bill No.<input type="search" name="search" id="searchinput" placeholder="Enter Name Or Model Number" />
-        <ul id="searchlist">
+        <ul id="searchlist" style="display:none ;">
           <li
             onclick="$('#productnamein').val('PVC PIPE 9597MM');$('#productname').html('PVC PIPE 9597MM'); $('#model').html(201); $('#modelin').val(201); $('#searchinput').val(''); ">
             PVC PIPE 9597MM || 201
@@ -260,7 +260,7 @@
             </th>
           </thead>
           <tbody>
-            <tr>
+            <tr onclick="location.href='billdetails.html'">
               <td>1</td>
               <td>22/07/22</td>
               <td>Stock Entry</td>
