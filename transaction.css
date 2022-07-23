@@ -265,11 +265,13 @@ header .title {
         border-radius: 3px;
     }
 
-    .action {
+    .action
+    {
         width: 85%;
-        transform: translateX(5%);
+        transform: translateX(0%);
         top: 200px;
     }
+
 
     .dataTable {
         overflow:hidden;
