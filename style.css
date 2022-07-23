@@ -281,8 +281,8 @@ header .title {
     }
     .action
     {
-        width: 75%;
-        transform: translateX(5%);
+        width: 85%;
+        transform: translateX(0%);
         top: 200px;
     }
 
