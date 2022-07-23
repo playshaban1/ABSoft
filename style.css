@@ -282,8 +282,8 @@ header .title {
     .action
     {
         width: 75%;
-        transform: translateX(0%);
-        top: 100px;
+        transform: translateX(5%);
+        top: 200px;
     }
 
     .dataTable {
