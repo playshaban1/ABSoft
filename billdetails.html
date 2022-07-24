@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Records || Alpha Business</title>
+  <title>Bill || Alpha Business Software</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
     integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <style>
+    body
+    {
+      width: 100%;
+      
+    }
+    @media print
+    {
+      head
+      {
+        display: none;
+      }
+      body
+      {
+        width: 100%;
+      }
+      .container
+     {
+       width: 95%;
+       box-shadow: none;
+       padding: 10px;
+       border: 1px solid black;
+     }
+      header
+      {
+        display: none;
+      }
+      .data
+      {
+        display: block;
+      }
+      .actions
+      {
+        display: none;
+      }
+      .dataTable
+      {
+        width: 100%;
+      }
+      .dataTable table
+      {
+        width:fit-content;
+        overflow: hidden;
+        font-size: 12px;
+        max-height: fit-content;
+        border: 1px solid black;
+      }
+      .dataTable table thead th
+      {
+        position: relative;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+      }
+      .dataTable table th,
+      .dataTable table td {
+
+        padding-top: 0;
+        padding-bottom: 0;
+        border: 0.5px solid black;
+        padding:0;
+
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -54,7 +119,7 @@
         </table>
         <div class="actions">
           <button onclick="location.href='transactions.html';"><i class="fas fa-arrow-left"></i> Go Back</button>
-          <button><i class="fas fa-print"></i> Print Bill</button>
+          <button onclick="window.print()"><i class="fas fa-print"></i> Print Bill</button>
           <button onclick="$('.action').hide();$('.DeleteData').show();"><i class="fas fa-edit"></i> Delete This Bill</button>
 
         </div>
