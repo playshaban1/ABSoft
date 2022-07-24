@@ -27,7 +27,7 @@
         
         <div class="actions">
           <button onclick="location.href='mainMenu.html';"><i class="fas fa-arrow-left"></i> Go Back</button>
-          <button onclick="">Add Product</button>
+          <button onclick="$('.AddProduct').show();">Add Product</button>
 
         </div>
       </div>
@@ -46,6 +46,43 @@
 
             <tr>
               <td>Name
+              </td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>Model No.</td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>Stock</td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr style="text-align: center">
+              <td>
+                <button onclick="$('.action').hide();" type="reset">
+                  Cancel
+                </button>
+              </td>
+              <td><button type="submit">Save</button></td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+      <form class="action AddProduct">
+        <fieldset>
+          <table>
+            <legend>Add Product</legend>
+            <tr align="center">
+              <td colspan="2">
+                <h1>Add New Product</h1>
+              </td>
+            </tr>
+            <tr>
+              <td>Product Name
               </td>
               <td><input type="text" name="" id="" /></td>
             </tr>
@@ -237,7 +274,7 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+      </div>
     </section>
   </div>
 

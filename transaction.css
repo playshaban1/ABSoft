@@ -39,14 +39,11 @@ header img {
 
 }
 
-header .title {
-    padding: 0 100px;
-}
 
 .pagetitle {
     text-align: center;
     background-color: rgb(25, 181, 192);
-    padding: 0 5px;
+    
     width: 95%;
     margin: 0 auto;
 }
@@ -187,10 +184,10 @@ header .title {
     display: inline-flex;
     justify-content: space-around;
     width: 92%;
-    background-color: var(--theme1);
+    
     text-align: center;
     margin: 0 auto;
-    padding: 10px;
+   
 
 }
 
@@ -238,7 +235,7 @@ header .title {
     }
 
     header {
-        width: 90%;
+        width: 100%;
         padding: 0;
         margin: 0 auto;
     }
@@ -251,7 +248,7 @@ header .title {
     }
 
     .pagetitle {
-        width: 80%;
+        width: 95%;
         margin: 0 auto;
     }
     .details table .amounts {
