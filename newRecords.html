@@ -58,13 +58,31 @@
                             <legend>Cancel Records</legend>
                             <tr>
                                 <td colspan="2">
-                                    <h1>Are You sure you want to drop this record?</h1>
+                                    <h1>Are You sure you want to cancel this record?</h1>
                                 </td>
                             </tr>
 
                             <tr style="text-align:center;">
                                 <td><button onclick="$('.action').hide();" type="reset">Cancel</button></td>
                                 <td><button type="button" onclick="location.href='transactions.html'">Yes</button></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+
+                <form class="action DropRec">
+                    <fieldset>
+                        <table>
+                            <legend>Drop Records</legend>
+                            <tr>
+                                <td colspan="2">
+                                    <h1>You want to drop this record?</h1>
+                                </td>
+                            </tr>
+
+                            <tr style="text-align:center;">
+                                <td><button onclick="$('.action').hide();" type="reset">Cancel</button></td>
+                                <td><button type="button" onclick="">Yes</button></td>
                             </tr>
                         </table>
                     </fieldset>
@@ -107,7 +125,7 @@
                 </form>
 
             </div>
-            <div class="dataTable newAdding">
+            <div class="dataTable ScrollTable">
 
 
                 <table>
@@ -145,6 +163,9 @@
                             <strong>Total Amount</strong>
                             <article>(IOT)</article>
                         </th>
+                        <th>
+                            <strong>Drop</strong>
+                        </th>
                     </thead>
                     <tbody>
                         <tr>
@@ -160,6 +181,7 @@
                             <td>120000</td>
                             <td>240000</td>
                             <td>4400000</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -174,6 +196,7 @@
                             <td>1200</td>
                             <td>2400</td>
                             <td>4400</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -188,6 +211,7 @@
                             <td>1200</td>
                             <td>2400</td>
                             <td>4400</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
                         </tr>
                         <tr>
                             <td>4</td>
@@ -202,6 +226,7 @@
                             <td>1200</td>
                             <td>2400</td>
                             <td>4400</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
                         </tr>
                         <tr>
                             <td>5</td>
@@ -216,6 +241,7 @@
                             <td>1200</td>
                             <td>2400</td>
                             <td>4400</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
                         </tr>
                         <tr>
                             <td>6</td>
@@ -230,6 +256,7 @@
                             <td>1200</td>
                             <td>2400</td>
                             <td>4400</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
                         </tr>
                         <tr>
                             <td>7</td>
@@ -244,6 +271,7 @@
                             <td>1200</td>
                             <td>2400</td>
                             <td>4400</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
                         </tr>
                         <tr>
                             <td>8</td>
@@ -258,6 +286,7 @@
                             <td>1200</td>
                             <td>2400</td>
                             <td>4400</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
                         </tr>
                         <tr>
                             <td>9</td>
@@ -272,13 +301,14 @@
                             <td>1200</td>
                             <td>2400</td>
                             <td>4400</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <th colspan="10">Total </td>
                         <th>2400</th>
                         <th>4400</th>
-                        
+                        <th>--</th>
                     </tfoot>
                 </table>
             </div>

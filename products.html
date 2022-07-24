@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Records || Alpha Business</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="Logo.png" alt="Logo HERE" width="80" height="80" />
+      <div class="title">
+        <h1>Alpha Business Software</h1>
+        <p>For Akash Hardwares</p>
+      </div>
+      <div class="pagetitle">
+        <p>List Of All Products</p>
+      </div>
+    </header>
+    <section class="data">
+      <div class="details">
+        
+        <div class="actions">
+          <button onclick="location.href='mainMenu.html';"><i class="fas fa-arrow-left"></i> Go Back</button>
+          <button onclick="">Add Product</button>
+
+        </div>
+      </div>
+      <form class="action EditData">
+        <fieldset>
+          <table>
+            <legend>Edit Product</legend>
+            <tr align="center">
+              <td colspan="2">
+                <h1>Edit Product informations</h1>
+              </td>
+            </tr>
+            <tr align="right">
+              <td colspan="2"><button onclick="$('.action').hide();$('.DeleteData').show();">Delete Product</button></td>
+            </tr>
+
+            <tr>
+              <td>Name
+              </td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>Model No.</td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>Stock</td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td><input type="text" name="" id="" /></td>
+            </tr>
+            <tr style="text-align: center">
+              <td>
+                <button onclick="$('.action').hide();" type="reset">
+                  Cancel
+                </button>
+              </td>
+              <td><button type="submit">Save</button></td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+      <form method="post" class="searchbar">
+        Search Your Product To Add On List<input type="search" name="search" id="searchinput"
+            placeholder="Enter Name Or Model Number">
+        <ul id="searchlist">
+            <li
+                onclick="$('#productnamein').val('PVC PIPE 9597MM');$('#productname').html('PVC PIPE 9597MM'); $('#model').html(201); $('#modelin').val(201); $('#searchinput').val(''); ">
+                PVC PIPE 9597MM || 201 </li>
+
+            <li
+                onclick="$('#productnamein').val('PVC PIPE 6444MM');$('#productname').html('PVC PIPE 6444MM'); $('#model').html(202); $('#modelin').val(202); $('#searchinput').val(''); ">
+                PVC PIPE 6444MM || 202 </li>
+
+            <li
+                onclick="$('#productnamein').val('PVC PIPE 7078MM');$('#productname').html('PVC PIPE 7078MM'); $('#model').html(203); $('#modelin').val(203); $('#searchinput').val(''); ">
+                PVC PIPE 7078MM || 203 </li>
+
+            <li
+                onclick="$('#productnamein').val('PVC PIPE 6056MM');$('#productname').html('PVC PIPE 6056MM'); $('#model').html(204); $('#modelin').val(204); $('#searchinput').val(''); ">
+                PVC PIPE 6056MM || 204 </li>
+
+            <li
+                onclick="$('#productnamein').val('PVC PIPE 3393MM');$('#productname').html('PVC PIPE 3393MM'); $('#model').html(205); $('#modelin').val(205); $('#searchinput').val(''); ">
+                PVC PIPE 3393MM || 205 </li>
+
+            <li
+                onclick="$('#productnamein').val('PVC PIPE 5275MM');$('#productname').html('PVC PIPE 5275MM'); $('#model').html(206); $('#modelin').val(206); $('#searchinput').val(''); ">
+                PVC PIPE 5275MM || 206 </li>
+
+            <li
+                onclick="$('#productnamein').val('PVC PIPE 7683MM');$('#productname').html('PVC PIPE 7683MM'); $('#model').html(207); $('#modelin').val(207); $('#searchinput').val(''); ">
+                PVC PIPE 7683MM || 207 </li>
+
+            <li
+                onclick="$('#productnamein').val('PVC PIPE 8681MM');$('#productname').html('PVC PIPE 8681MM'); $('#model').html(208); $('#modelin').val(208); $('#searchinput').val(''); ">
+                PVC PIPE 8681MM || 208 </li>
+
+            <li
+                onclick="$('#productnamein').val('PVC PIPE 4699MM');$('#productname').html('PVC PIPE 4699MM'); $('#model').html(209); $('#modelin').val(209); $('#searchinput').val(''); ">
+                PVC PIPE 4699MM || 209 </li>
+
+        </ul>
+    </form>
+        
+        
+      <div class="dataTable ScrollTable">
+
+
+        <table>
+            <thead>
+
+                <th>
+                    <strong> Sl.No</strong>
+                </th>
+                <th>
+                    <strong>Name Of Product </strong>
+                </th>
+                <th>
+                    <strong>Model No.</strong>
+                </th>
+                <th>
+                    <strong>Stock</strong>
+                </th>
+                <th>
+                    <strong>Price</strong>
+                    <article>(IOT)</article>
+                </th>
+                <th>
+                    <strong>Last Add On</strong>
+                </th>
+                <th>Edit</th>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Test ProductestProductest Productest Productest Product</td>
+                    <td>123322</td>
+                    <td>12</td>
+                    <td>100000</td>
+                    <td>98</td>
+                    <td align="center" onclick="$('.EditData').show()" style="color:green; cursor: pointer;"><i class="fas fa-edit"></i></td>
+                   
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Test Product</td>
+                    <td>123322</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td align="center" onclick="$('.EditData').show()" style="color:green; cursor: pointer;"><i class="fas fa-edit"></i></td>
+                    
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Test Product</td>
+                    <td>123322</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td align="center" onclick="$('.EditData').show()" style="color:green; cursor: pointer;"><i class="fas fa-edit"></i></td>
+                    
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Test Product</td>
+                    <td>123322</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td align="center" onclick="$('.EditData').show()" style="color:green; cursor: pointer;"><i class="fas fa-edit"></i></td>
+                    
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Test Product</td>
+                    <td>123322</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td align="center" onclick="$('.EditData').show()" style="color:green; cursor: pointer;"><i class="fas fa-edit"></i></td>
+                    
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Test Product</td>
+                    <td>123322</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td align="center" onclick="$('.EditData').show()" style="color:green; cursor: pointer;"><i class="fas fa-edit"></i></td>
+                    
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Test Product</td>
+                    <td>123322</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td align="center" onclick="$('.EditData').show()" style="color:green; cursor: pointer;"><i class="fas fa-edit"></i></td>
+                    
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Test Product</td>
+                    <td>123322</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td align="center" onclick="$('.EditData').show()" style="color:green; cursor: pointer;"><i class="fas fa-edit"></i></td>
+                    
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Test Product</td>
+                    <td>123322</td>
+                    <td>12</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td align="center" onclick="$('.EditData').show()" style="color:green; cursor: pointer;"><i class="fas fa-edit"></i></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </section>
+  </div>
+
+  <script src="newRecords.js"></script>
+</body>
