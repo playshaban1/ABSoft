@@ -277,7 +277,35 @@ header img {
     color: white;
     cursor: pointer;
 }
+/*mainMenu.html*/
+.menuOptions
+{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
 
+}
+.menuOptions a 
+{
+    background-color: var(--theme1);
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+.menuOptions a:hover
+{
+    background-color: white;
+    color: var(--theme1);
+    border: 1px solid gray;
+}
+
+/*mainMenu.html ends*/
 @media screen and (max-width: 600px) {
     body {
         width: 99%;
