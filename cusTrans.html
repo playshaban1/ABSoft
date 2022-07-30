@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Records || Alpha Business</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="transaction.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="Logo.png" alt="Logo HERE" width="80" height="80" />
+      <div class="title">
+        <h1>Alpha Business Software</h1>
+        <p>For Akash Hardwares</p>
+      </div>
+      <div class="pagetitle">
+        <p><i class="fas fa-align-justify"></i> CUSTOMER TRANSACTIONS</p>
+      </div>
+    </header>
+    <section class="data">
+      <div class="details">
+        <table>
+          <tr>
+            <td>Name</td>
+            <td colspan="2">: Shaban Customer</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td colspan="2">: shabankhan002@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td colspan="2">: +917070921343</td>
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td colspan="2">: 25/12/2022</td>
+          </tr>
+          <tr>
+            <td align="center">
+              <div class="amounts" style="color:blue">
+                ₹ <br />
+                100000 <br />
+                Total
+              </div>
+            </td>
+            <td align="center">
+              <div class="amounts" style="color:green">
+                ₹ <br />
+                25000 <br />
+                paid
+              </div>
+            </td>
+            <td align="center" style="color:red">
+              <div class="amounts">
+                ₹ <br />
+                75000 <br />
+                Dues
+              </div>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+        <div class="actions">
+          <button onclick="location.href='customers.html'" ><i class="fas fa-arrow-left"></i> Go Back</button>
+          <button onclick="$('.action').hide();$('.PayDues').show();"><i class="fas fa-rupee-sign"></i> Pay Dues</button>
+          <button onclick="$('.action').hide();$('.EditData').show();"><i class="fas fa-edit"></i> Edit Info</button>
+          <button onclick="location.href='newRecords.html'"><i class="fas fa-file-medical"></i> New Bill</button>
+        </div>
+
+        <form class="action PayDues">
+          <fieldset>
+            <table>
+              <legend>Pay Old Dues</legend>
+              <tr align="center">
+                <td colspan="2">
+                  <h1>You are now paying old dues</h1>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Total Due Amount</td>
+                <td>xxx</td>
+              </tr>
+              <tr>
+                <td>Paying Amount</td>
+                <td><input type="number" name="" id="" /></td>
+              </tr>
+              <tr>
+                <td>Rest Due Amount</td>
+                <td><input type="number" name="" id="" /></td>
+              </tr>
+              <tr>
+                <td>Enter date :</td>
+                <td><input type="date" name="" id="" required /></td>
+              </tr>
+              <tr style="text-align: center">
+                <td>
+                  <button onclick="$('.action').hide();" type="reset">
+                    Cancel
+                  </button>
+                </td>
+                <td><button type="submit">Save</button></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+        <form class="action EditData">
+          <fieldset>
+            <table>
+              <legend>Edit Details</legend>
+              <tr align="center">
+                <td colspan="2">
+                  <h1>Editing Distributer's Detials.</h1>
+                </td>
+              </tr>
+              <tr align="right">
+                <td colspan="2"><button onclick="$('.action').hide();$('.DeleteData').show();">Delete Data</button></td>
+              </tr>
+
+              <tr>
+                <td>Name
+                  <aside>(Name can't be change)</aside>
+                </td>
+                <td>xxx</td>
+              </tr>
+              <tr>
+                <td>Mobile</td>
+                <td><input type="text" name="" id="" /></td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td><input type="text" name="" id="" /></td>
+              </tr>
+              <tr>
+                <td>GST Number</td>
+                <td><input type="text" name="" id="" /></td>
+              </tr>
+              <tr style="text-align: center">
+                <td>
+                  <button onclick="$('.action').hide();" type="reset">
+                    Cancel
+                  </button>
+                </td>
+                <td><button type="submit">Save</button></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+        <form class="action DeleteData">
+          <fieldset>
+            <table>
+              <legend>Delete Data</legend>
+              <tr align="center">
+                <td colspan="2">
+                  <h1>!!Delete Whole Data!!</h1>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">Enter Password to delete</td>
+              </tr>
+              <tr>
+              <tr>
+                <td colspan="2"><input type="text" name="" id="" required /></td>
+              </tr>
+              <tr style="text-align: center">
+                <td>
+                  <button onclick="$('.action').hide();" type="reset">
+                    Cancel
+                  </button>
+                </td>
+                <td><button type="submit">Save</button></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+      <form method="post" class="searchbar" >
+        Search Bill No.<input type="date" name="search" id="searchinput" />
+        <ul id="searchlist" style="display:none ;">
+          <li
+            onclick="$('#productnamein').val('PVC PIPE 9597MM');$('#productname').html('PVC PIPE 9597MM'); $('#model').html(201); $('#modelin').val(201); $('#searchinput').val(''); ">
+            PVC PIPE 9597MM || 201
+          </li>
+
+          <li
+            onclick="$('#productnamein').val('PVC PIPE 6444MM');$('#productname').html('PVC PIPE 6444MM'); $('#model').html(202); $('#modelin').val(202); $('#searchinput').val(''); ">
+            PVC PIPE 6444MM || 202
+          </li>
+
+          <li
+            onclick="$('#productnamein').val('PVC PIPE 7078MM');$('#productname').html('PVC PIPE 7078MM'); $('#model').html(203); $('#modelin').val(203); $('#searchinput').val(''); ">
+            PVC PIPE 7078MM || 203
+          </li>
+
+          <li
+            onclick="$('#productnamein').val('PVC PIPE 6056MM');$('#productname').html('PVC PIPE 6056MM'); $('#model').html(204); $('#modelin').val(204); $('#searchinput').val(''); ">
+            PVC PIPE 6056MM || 204
+          </li>
+
+          <li
+            onclick="$('#productnamein').val('PVC PIPE 3393MM');$('#productname').html('PVC PIPE 3393MM'); $('#model').html(205); $('#modelin').val(205); $('#searchinput').val(''); ">
+            PVC PIPE 3393MM || 205
+          </li>
+
+          <li
+            onclick="$('#productnamein').val('PVC PIPE 5275MM');$('#productname').html('PVC PIPE 5275MM'); $('#model').html(206); $('#modelin').val(206); $('#searchinput').val(''); ">
+            PVC PIPE 5275MM || 206
+          </li>
+
+          <li
+            onclick="$('#productnamein').val('PVC PIPE 7683MM');$('#productname').html('PVC PIPE 7683MM'); $('#model').html(207); $('#modelin').val(207); $('#searchinput').val(''); ">
+            PVC PIPE 7683MM || 207
+          </li>
+
+          <li
+            onclick="$('#productnamein').val('PVC PIPE 8681MM');$('#productname').html('PVC PIPE 8681MM'); $('#model').html(208); $('#modelin').val(208); $('#searchinput').val(''); ">
+            PVC PIPE 8681MM || 208
+          </li>
+
+          <li
+            onclick="$('#productnamein').val('PVC PIPE 4699MM');$('#productname').html('PVC PIPE 4699MM'); $('#model').html(209); $('#modelin').val(209); $('#searchinput').val(''); ">
+            PVC PIPE 4699MM || 209
+          </li>
+        </ul>
+      </form>
+      <div class="dataTable">
+        <table>
+          <thead>
+            <th>
+              <strong> Sl.No</strong>
+            </th>
+            <th>
+              <strong> Date </strong>
+            </th>
+            <th>
+              <strong> Type </strong>
+            </th>
+            <th>
+              <strong>Total</strong>
+            </th>
+            <th>
+              <strong>Paid</strong>
+            </th>
+            <th>
+              <strong>Dues</strong>
+            </th>
+          </thead>
+          <tbody>
+            <tr onclick="location.href='cusBill.html'">
+              <td>1</td>
+              <td>22/07/22</td>
+              <td>Stock Entry</td>
+              <td>500000</td>
+              <td>50000</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>22/07/22</td>
+              <td>Stock Entry</td>
+              <td>500000</td>
+              <td>50000</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>22/07/22</td>
+              <td>Stock Entry</td>
+              <td>500000</td>
+              <td>50000</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>22/07/22</td>
+              <td>Stock Entry</td>
+              <td>500000</td>
+              <td>50000</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>22/07/22</td>
+              <td>Stock Entry</td>
+              <td>500000</td>
+              <td>50000</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>22/07/22</td>
+              <td>Stock Entry</td>
+              <td>500000</td>
+              <td>50000</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>22/07/22</td>
+              <td>Stock Entry</td>
+              <td>500000</td>
+              <td>50000</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>22/07/22</td>
+              <td>Stock Entry</td>
+              <td>500000</td>
+              <td>50000</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>22/07/22</td>
+              <td>Stock Entry</td>
+              <td>500000</td>
+              <td>50000</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="newRecords.js"></script>
+</body>
