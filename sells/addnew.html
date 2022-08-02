@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Records || Alpha Business</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="/Logo.png" alt="Logo HERE" width="80" height="80">
+            <div class="title">
+                <h1>Alpha Business Software</h1>
+                <p>For Akash Hardwares</p>
+            </div>
+            <div class="pagetitle">
+                <p><i class="fas fa-file-medical"></i> NEW RECORD</p>
+            </div>
+        </header>
+        <section class="data">
+
+            <div class="details">
+                <table>
+                    <tr>
+                        <td>Transaction Type </td>
+                        <td>: General Entry</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Date </td>
+                        <td>: 25/12/2022</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div class="actions">
+                    <button onclick="location.href='sells.html'">Cancel</button></td>
+                    <button onclick="$('.SaveRec').show();">Save Records</button>
+                </div>
+                <form class="action cancelR">
+                    <fieldset>
+                        <table>
+                            <legend>Cancel Records</legend>
+                            <tr>
+                                <td colspan="2">
+                                    <h1>Are You sure you want to cancel this record?</h1>
+                                </td>
+                            </tr>
+
+                            <tr style="text-align:center;">
+                                <td><button onclick="$('.action').hide();" type="reset">Cancel</button></td>
+                                <td><button type="button" onclick="location.href='transactions.html'">Yes</button></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+
+                <form class="action DropRec">
+                    <fieldset>
+                        <table>
+                            <legend>Drop Records</legend>
+                            <tr>
+                                <td colspan="2">
+                                    <h1>You want to drop this record?</h1>
+                                </td>
+                            </tr>
+
+                            <tr style="text-align:center;">
+                                <td><button onclick="$('.action').hide();" type="reset">Cancel</button></td>
+                                <td><button type="button" onclick="">Yes</button></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+                <form class="action SaveRec">
+                    <fieldset>
+                        <table>
+                            <legend>Save Record</legend>
+                            <tr>
+                                <td colspan="2">
+                                    <h1>Do you want to save this record?</h1>
+                                </td>
+                            </tr>
+                            
+                            <tr style="text-align:center;">
+                                <td><button onclick="$('.action').hide();" type="reset">Cancel</button></td>
+                                <td><button type="submit">Save</button></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+
+            </div>
+            <div class="dataTable ScrollTable">
+
+
+                <table>
+                    <thead>
+
+                        <th>
+                            <strong> Sl.No</strong>
+                        </th>
+                        <th>
+                            <strong>Name Of Product </strong>
+                        </th>
+                        <th>
+                            <strong>Model No.</strong>
+                        </th>
+                        <th>
+                            <strong>Quantity</strong>
+                        </th>
+                        
+                        <th>
+                            <strong>Total Amount</strong>
+                            <article>(IOT)</article>
+                        </th>
+                        <th>
+                            <strong>Drop</strong>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Test ProductestProductest Productest Productest Product</td>
+                            <td>123322</td>
+                            <td>12</td>
+                            <td>100000</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Test Product</td>
+                            <td>123322</td>
+                            <td>12</td>
+                            <td>100</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Test Product</td>
+                            <td>123322</td>
+                            <td>12</td>
+                            <td>100</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Test Product</td>
+                            <td>123322</td>
+                            <td>12</td>
+                            <td>100</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Test Product</td>
+                            <td>123322</td>
+                            <td>12</td>
+                            <td>100</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Test Product</td>
+                            <td>123322</td>
+                            <td>12</td>
+                            <td>100</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Test Product</td>
+                            <td>123322</td>
+                            <td>12</td>
+                            <td>100</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Test Product</td>
+                            <td>123322</td>
+                            <td>12</td>
+                            <td>100</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Test Product</td>
+                            <td>123322</td>
+                            <td>12</td>
+                            <td>100</td>
+                            <td align="center" onclick="$('.DropRec').show()" style="color:red; cursor: pointer;"><i class="fas fa-minus-circle"></i></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th colspan="3">Total </td>
+                        <th>2400</th>
+                        <th>4400</th>
+                        <th>--</th>
+                    </tfoot>
+                </table>
+            </div>
+            <form method="post" class="searchbar">
+                Search Your Product To Add On List<input type="search" name="search" id="searchinput"
+                    placeholder="Enter Name Or Model Number">
+                <ul id="searchlist">
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 9597MM');$('#productname').html('PVC PIPE 9597MM'); $('#model').html(201); $('#modelin').val(201); $('#searchinput').val('');$('#storage').html(2); $('#stock').html(300); $('#buyPrice').html(200); $('#sellPrice').html(250); ">
+                        PVC PIPE 9597MM || 201 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 6444MM');$('#productname').html('PVC PIPE 6444MM'); $('#model').html(202); $('#modelin').val(202); $('#searchinput').val(''); ">
+                        PVC PIPE 6444MM || 202 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 7078MM');$('#productname').html('PVC PIPE 7078MM'); $('#model').html(203); $('#modelin').val(203); $('#searchinput').val(''); ">
+                        PVC PIPE 7078MM || 203 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 6056MM');$('#productname').html('PVC PIPE 6056MM'); $('#model').html(204); $('#modelin').val(204); $('#searchinput').val(''); ">
+                        PVC PIPE 6056MM || 204 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 3393MM');$('#productname').html('PVC PIPE 3393MM'); $('#model').html(205); $('#modelin').val(205); $('#searchinput').val(''); ">
+                        PVC PIPE 3393MM || 205 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 5275MM');$('#productname').html('PVC PIPE 5275MM'); $('#model').html(206); $('#modelin').val(206); $('#searchinput').val(''); ">
+                        PVC PIPE 5275MM || 206 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 7683MM');$('#productname').html('PVC PIPE 7683MM'); $('#model').html(207); $('#modelin').val(207); $('#searchinput').val(''); ">
+                        PVC PIPE 7683MM || 207 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 8681MM');$('#productname').html('PVC PIPE 8681MM'); $('#model').html(208); $('#modelin').val(208); $('#searchinput').val(''); ">
+                        PVC PIPE 8681MM || 208 </li>
+
+                    <li
+                        onclick="$('#productnamein').val('PVC PIPE 4699MM');$('#productname').html('PVC PIPE 4699MM'); $('#model').html(209); $('#modelin').val(209); $('#searchinput').val(''); ">
+                        PVC PIPE 4699MM || 209 </li>
+
+                </ul>
+            </form>
+
+            <form action="" class="addPro">
+                <fieldset>
+                    <table>
+
+                        <legend>Add Products</legend>
+                        <tr>
+                            <td>
+                                <p>Name OF Product : <span id="productname" style="color:black;"></span> </p>
+                                <input type="text" name="productname" id="productnamein" hidden required>
+                            </td>
+                            
+                            <td>
+                                <p> Model : <span id="model" style="color:black;"></span> </p>
+                                <input type="text" name="model" id="modelin" placeholder="Enter name Or model No."
+                                    hidden required>
+                            </td>
+                            <td><p>Storage : <span id="storage" style="color:black;"> </span></p></td>
+
+                        </tr>
+                        <tr>
+
+                            <td>In Stock</td>
+                            <td>Buying Price</td>
+                            <td>Selling Price</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p id="stock" style="color:black;"></p>
+                            </td>
+                            <td>
+                                <p id="buyPrice" style="color:black;"></p>
+                            </td>
+                            <td>
+                                <p id="sellPrice" style="color:black;"></p>
+                            </td>
+                        </tr>
+                        <tr>
+
+
+
+                            <td >Quantity</td>
+                            <td> Selling Price</td>
+                            <td>Total Amount</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="quantity" placeholder="in percentage"></td>
+                        
+
+                            <td><input type="text" id="sgst" placeholder="in percentage"></td>
+                            <td><p id="totalAmount"></p></td>
+                        </tr>
+                        
+                        <tr style="text-align:center;">
+                            <td colspan="2">
+                                <input type="reset" class="btns"
+                                    onclick="$('#productname').html('');$('#model').html('')" value="Clear">
+                            </td>
+                            <td colspan="2">
+                                <input type="submit" class="btns" value="Add">
+                            </td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+            </form>
+        </section>
+    </div>
+
+    <script>
+
+const cgst = document.querySelector("#cgst");
+const cgstamt = document.querySelector("#cgstamt");
+const sgstamt = document.querySelector("#sgstamt");
+const sgst = document.querySelector("#sgst");
+const totaltax = document.querySelector("#totaltax");
+const totalamt = document.querySelector("#totalamt");
+
+$('.action').on("submit",function(e)
+{
+    e.preventDefault();
+});
+
+
+$(function () {
+    //serachbar 
+    setInterval(function () {
+        if ( searchinput.value!= "") {
+            $('#searchlist').show();
+        }
+        else {
+            $('#searchlist').hide();
+        }
+        
+     
+    }, 100);
+});
+
+    </script>
+</body>
